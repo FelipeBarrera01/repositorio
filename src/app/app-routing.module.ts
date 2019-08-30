@@ -2,8 +2,12 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},  { path: 'herramientas', loadChildren: './herramientas/herramientas.module#HerramientasPageModule' },
+  { path: '', redirectTo: 'inicio', pathMatch: 'full' },
+ 
+  { path: 'herramientas', loadChildren: './herramientas/herramientas.module#HerramientasPageModule' },
+  { path: 'inicio', loadChildren: './inicio/inicio.module#InicioPageModule' },  { path: 'alert', loadChildren: './alert/alert.module#AlertPageModule' },
+  { path: 'action', loadChildren: './action/action.module#ActionPageModule' },
+
 
 ];
 

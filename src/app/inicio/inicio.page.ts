@@ -16,6 +16,11 @@ export class InicioPage implements OnInit {
         icon: 'appstore',
         name: 'alert',
         redirectTo: '/alert'
+      },
+      {
+        icon: 'beaker',
+        name: 'Avatar',
+        redirectTo: '/avatar'
       }
     ];
   constructor() { }
